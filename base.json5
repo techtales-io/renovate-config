@@ -1,0 +1,32 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "techtales base config",
+  extends: [
+    // https://docs.renovatebot.com/presets-config/
+    "config:best-practices",
+
+    // https://docs.renovatebot.com/presets-default/
+    ":automergeRequireAllStatusChecks",
+    ":disableRateLimiting",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    ":pinAllExceptPeerDependencies",
+    ":rebaseStalePrs",
+    ":renovatePrefix",
+
+    "github>techtales-io/renovate-config//commit-message/default.json5",
+    "github>techtales-io/renovate-config//github-actions/default.json5",
+    "github>techtales-io/renovate-config//labels/default.json5",
+    "github>techtales-io/renovate-config//pre-commit/default.json5",
+  ],
+
+  // https://docs.renovatebot.com/configuration-options/
+  commitBodyTable: true,
+  configMigration: true,
+  dependencyDashboard: true,
+  dependencyDashboardTitle: ":robot: Renovate Dashboard",
+  platformCommit: true,
+  printConfig: false,
+  stopUpdatingLabel: "stop-updating",
+  suppressNotifications: ["prIgnoreNotification"],
+  timezone: "Europe/Vienna",
+}

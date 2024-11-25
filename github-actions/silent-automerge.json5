@@ -1,0 +1,15 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "github-actions: silent automerge (without pr)",
+  extends: [
+    "github>techtales-io/renovate-config//github-actions/automerge.json5",
+  ],
+  packageRules: [
+    {
+      matchManagers: ["github-actions"],
+      matchUpdateTypes: ["minor", "patch", "digest"],
+      automergeType: "branch",
+      requiredStatusChecks: null,
+    },
+  ],
+}

@@ -1,0 +1,78 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  // https://docs.renovatebot.com/configuration-options/#packagerules
+  packageRules: [
+    {
+      matchManagers: ["dockerfile"],
+      addLabels: ["renovate/dockerfile"],
+    },
+    {
+      matchManagers: ["flux"],
+      addLabels: ["renovate/flux"],
+    },
+    {
+      matchManagers: ["github-actions"],
+      addLabels: ["renovate/github-actions"],
+    },
+    {
+      matchManagers: ["helmv3"],
+      addLabels: ["renovate/helmv3"],
+    },
+    {
+      matchManagers: ["helm-values"],
+      addLabels: ["renovate/helm-values"],
+    },
+    {
+      matchManagers: ["homebrew"],
+      addLabels: ["renovate/homebrew"],
+    },
+    {
+      matchManagers: ["kubernetes"],
+      addLabels: ["renovate/kubernetes"],
+    },
+    {
+      matchManagers: ["kustomize"],
+      addLabels: ["renovate/kustomize"],
+    },
+    {
+      matchManagers: ["mise"],
+      addLabels: ["renovate/mise"],
+    },
+    {
+      matchManagers: ["nix"],
+      addLabels: ["renovate/nix"],
+    },
+    {
+      matchManagers: ["npm"],
+      addLabels: ["renovate/npm"],
+    },
+    {
+      matchManagers: ["nvm"],
+      addLabels: ["renovate/nvm"],
+    },
+    {
+      matchManagers: ["poetry"],
+      addLabels: ["renovate/poetry"],
+    },
+    {
+      matchManagers: ["pre-commit"],
+      addLabels: ["renovate/pre-commit"],
+    },
+    {
+      matchManagers: ["pyenv"],
+      addLabels: ["renovate/pyenv"],
+    },
+    {
+      matchManagers: ["regex"],
+      addLabels: ["renovate/regex"],
+    },
+    {
+      matchManagers: ["terraform"],
+      addLabels: ["renovate/terraform"],
+    },
+    {
+      matchManagers: ["terraform-version"],
+      addLabels: ["renovate/terraform-version"],
+    },
+  ],
+}

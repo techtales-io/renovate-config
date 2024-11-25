@@ -1,0 +1,62 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  // https://docs.renovatebot.com/configuration-options/#packagerules
+  packageRules: [
+    {
+      matchDatasources: ["docker"],
+      addLabels: ["renovate/docker"],
+    },
+    {
+      matchDatasources: ["git-refs"],
+      addLabels: ["renovate/git-refs"],
+    },
+    {
+      matchDatasources: ["git-tags"],
+      addLabels: ["renovate/git-tags"],
+    },
+    {
+      matchDatasources: ["github-release-attachments"],
+      addLabels: ["renovate/github-release-attachments"],
+    },
+    {
+      matchDatasources: ["github-releases"],
+      addLabels: ["renovate/github-releases"],
+    },
+    {
+      matchDatasources: ["github-runners"],
+      addLabels: ["renovate/github-runners"],
+    },
+    {
+      matchDatasources: ["github-tags"],
+      addLabels: ["renovate/github-tags"],
+    },
+    {
+      matchDatasources: ["helm"],
+      addLabels: ["renovate/helm"],
+    },
+    {
+      matchDatasources: ["kubernetes-api"],
+      addLabels: ["renovate/kubernetes-api"],
+    },
+    {
+      matchDatasources: ["node-version"],
+      addLabels: ["renovate/node-version"],
+    },
+    {
+      matchDatasources: ["npm"],
+      addLabels: ["renovate/npm"],
+    },
+    {
+      matchDatasources: ["pypi"],
+      addLabels: ["renovate/pypi"],
+    },
+    {
+      matchDatasources: ["terraform-module"],
+      addLabels: ["renovate/terraform-module"],
+    },
+    {
+      matchDatasources: ["terraform-provider"],
+      addLabels: ["renovate/terraform-provider"],
+    },
+  ],
+}
