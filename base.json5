@@ -7,13 +7,14 @@
 
     // https://docs.renovatebot.com/presets-default/
     ":automergeRequireAllStatusChecks",
-    ":enableVulnerabilityAlertsWithLabel(security)",
     ":disableRateLimiting",
+    ":enableVulnerabilityAlertsWithLabel(security)",
     ":pinAllExceptPeerDependencies",
     ":rebaseStalePrs",
     ":renovatePrefix",
 
     "github>techtales-io/renovate-config//commit-message/default.json5",
+    "github>techtales-io/renovate-config//github-actions/default.json5",
     "github>techtales-io/renovate-config//labels/default.json5",
   ],
 
