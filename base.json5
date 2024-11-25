@@ -16,6 +16,7 @@
     "github>techtales-io/renovate-config//commit-message/default.json5",
     "github>techtales-io/renovate-config//github-actions/default.json5",
     "github>techtales-io/renovate-config//labels/default.json5",
+    "github>techtales-io/renovate-config//pre-commit/default.json5",
   ],
 
   // https://docs.renovatebot.com/configuration-options/
