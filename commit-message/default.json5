@@ -1,0 +1,6 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "github>techtales-io/renovate-config//commit-message/semantic-commits.json5",
+  ],
+}

@@ -1,0 +1,9 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "github>techtales-io/renovate-config//labels/datasources.json5",
+    "github>techtales-io/renovate-config//labels/dependencies.json5",
+    "github>techtales-io/renovate-config//labels/managers.json5",
+    "github>techtales-io/renovate-config//labels/semantic.json5",
+  ],
+}
