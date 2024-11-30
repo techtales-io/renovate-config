@@ -15,10 +15,6 @@
       addLabels: ["renovate/git-tags"],
     },
     {
-      matchDatasources: ["github-release-attachments"],
-      addLabels: ["renovate/github-release-attachments"],
-    },
-    {
       matchDatasources: ["github-releases"],
       addLabels: ["renovate/github-releases"],
     },
@@ -49,6 +45,10 @@
     {
       matchDatasources: ["pypi"],
       addLabels: ["renovate/pypi"],
+    },
+    {
+      matchDatasources: ["python-version"],
+      addLabels: ["renovate/python-version"],
     },
     {
       matchDatasources: ["terraform-module"],
