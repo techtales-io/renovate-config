@@ -3,6 +3,18 @@
   // https://docs.renovatebot.com/configuration-options/#packagerules
   packageRules: [
     {
+      matchManagers: ["argocd"],
+      addLabels: ["renovate/argocd"],
+    },
+    {
+      matchManagers: ["asdf"],
+      addLabels: ["renovate/asdf"],
+    },
+    {
+      matchManagers: ["docker-compose"],
+      addLabels: ["renovate/docker-compose"],
+    },
+    {
       matchManagers: ["dockerfile"],
       addLabels: ["renovate/dockerfile"],
     },
@@ -65,6 +77,10 @@
     {
       matchManagers: ["regex"],
       addLabels: ["renovate/regex"],
+    },
+    {
+      matchManagers: ["tekton"],
+      addLabels: ["renovate/tekton"],
     },
     {
       matchManagers: ["terraform"],

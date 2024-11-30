@@ -4,15 +4,15 @@
   packageRules: [
     {
       matchDepTypes: ["optionalDependencies"],
-      addLabels: ["optional"],
+      addLabels: ["type/optional"],
     },
     {
       matchDepTypes: ["peerDependencies"],
-      addLabels: ["peer"],
+      addLabels: ["type/peer"],
     },
     {
       matchDepTypes: ["devDependencies"],
-      addLabels: ["dev"],
+      addLabels: ["type/dev"],
     },
   ],
 }

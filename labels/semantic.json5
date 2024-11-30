@@ -4,19 +4,19 @@
   packageRules: [
     {
       matchUpdateTypes: ["major"],
-      addLabels: ["major"],
+      addLabels: ["type/major"],
     },
     {
       matchUpdateTypes: ["minor"],
-      addLabels: ["minor"],
+      addLabels: ["type/minor"],
     },
     {
       matchUpdateTypes: ["patch"],
-      addLabels: ["patch"],
+      addLabels: ["type/patch"],
     },
     {
       matchUpdateTypes: ["digest"],
-      addLabels: ["digest"],
+      addLabels: ["type/digest"],
     },
   ],
 }
