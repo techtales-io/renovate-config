@@ -1,0 +1,13 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "nix: silent automerge (without pr)",
+  extends: ["github>techtales-io/renovate-config//nix/automerge.json5"],
+  packageRules: [
+    {
+      matchManagers: ["nix"],
+      matchUpdateTypes: ["minor", "patch", "digest"],
+      automergeType: "branch",
+      requiredStatusChecks: null,
+    },
+  ],
+}
