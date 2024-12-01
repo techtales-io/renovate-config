@@ -1,0 +1,13 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "helm-values: semantic commit configuration",
+  packageRules: [
+    {
+      matchManagers: ["helm-values"],
+      matchDatasources: ["docker"],
+      matchUpdateTypes: ["major", "minor", "patch", "digest"],
+      semanticCommitScope: "container",
+      commitMessageTopic: "image {{packageName}}",
+    },
+  ],
+}

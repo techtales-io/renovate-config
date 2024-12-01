@@ -1,0 +1,17 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "kubernetes: automerge non major versions",
+  packageRules: [
+    {
+      matchManagers: ["kubernetes"],
+      automerge: true,
+      matchUpdateTypes: ["minor", "patch", "digest"],
+      automergeType: "pr",
+    },
+    {
+      matchManagers: ["kubernetes"],
+      matchDatasources: ["kubernetes-api"],
+      automerge: false,
+    },
+  ],
+}

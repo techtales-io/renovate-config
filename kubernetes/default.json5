@@ -1,0 +1,8 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  // https://docs.renovatebot.com/modules/manager/kubernetes/
+  extends: [
+    "github>techtales-io/renovate-config//kubernetes/automerge.json5",
+    "github>techtales-io/renovate-config//kubernetes/file-match.json5",
+  ],
+}

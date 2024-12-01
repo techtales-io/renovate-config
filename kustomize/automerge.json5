@@ -1,0 +1,12 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "kustomize: automerge non major versions",
+  packageRules: [
+    {
+      matchManagers: ["kustomize"],
+      automerge: true,
+      matchUpdateTypes: ["minor", "patch", "digest"],
+      automergeType: "pr",
+    },
+  ],
+}
