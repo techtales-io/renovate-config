@@ -1,0 +1,17 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "custom regex: various dependencies in yaml files",
+  customManagers: [
+    {
+      customType: "regex",
+      description: "process various dependencies in YAML files",
+      fileMatch: ["\\.ya?ml(\\.j2)?$"],
+      matchStrings: [
+        '(?m:^[ \\t]*?# ?renovate: depName=(?<depName>\\S+) datasource=(?<datasource>\\S+)( versioning=(?<versioning>\\S+))?( extractVersion=(?<extractVersion>\\S+))?\\n[ \\t \\- ]*?\\S+:[ ]*"?(?<currentValue>[^" ]+?)"?$)',
+      ],
+      datasourceTemplate: "{{{datasource}}}",
+      versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+      extractVersionTemplate: "{{#if extractVersion}}{{{extractVersion}}}{{else}}^(?<version>.*)${{/if}}",
+    },
+  ],
+}
