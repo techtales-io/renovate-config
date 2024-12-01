@@ -4,5 +4,6 @@
   extends: [
     "github>techtales-io/renovate-config//terraform/automerge.json5",
     "github>techtales-io/renovate-config//terraform/range-strategy-widen.json5",
+    "github>techtales-io/renovate-config//terraform/semantic-commit.json5",
   ],
 }
