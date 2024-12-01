@@ -4,5 +4,6 @@
   extends: [
     ":enablePreCommit",
     "github>techtales-io/renovate-config//pre-commit/automerge.json5",
+    "github>techtales-io/renovate-config//pre-commit/semantic-commit.json5",
   ],
 }
