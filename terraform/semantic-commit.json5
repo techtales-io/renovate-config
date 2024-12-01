@@ -1,0 +1,12 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "terraform: semantic commit configuration",
+  packageRules: [
+    {
+      matchManagers: ["terraform"],
+      matchUpdateTypes: ["major", "minor", "patch", "digest"],
+      semanticCommitScope: "terraform",
+      commitMessageTopic: "{{packageName}}",
+    },
+  ],
+}
