@@ -4,6 +4,7 @@
   extends: [
     // https://docs.renovatebot.com/presets-config/
     "config:best-practices",
+    "mergeConfidence:all-badges",
 
     // https://docs.renovatebot.com/presets-default/
     ":automergeRequireAllStatusChecks",

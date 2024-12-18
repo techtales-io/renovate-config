@@ -1,0 +1,8 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  // https://docs.renovatebot.com/modules/manager/npm/
+  extends: [
+    "npm:unpublishSafe",
+    "github>techtales-io/renovate-config//npm/automerge.json5",
+  ],
+}
