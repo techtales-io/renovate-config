@@ -3,5 +3,6 @@
   // https://docs.renovatebot.com/modules/manager/github-actions/
   extends: [
     "github>techtales-io/renovate-config//github-actions/automerge.json5",
+    "github>techtales-io/renovate-config//github-actions/semantic-commit.json5",
   ],
 }
