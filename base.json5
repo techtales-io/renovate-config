@@ -15,8 +15,8 @@
     ":renovatePrefix",
 
     "github>techtales-io/renovate-config//commit-message/default.json5",
-    "github>techtales-io/renovate-config//github-actions/default.json5",
     "github>techtales-io/renovate-config//labels/default.json5",
+    "github>techtales-io/renovate-config//github-actions/default.json5",
     "github>techtales-io/renovate-config//pre-commit/default.json5",
   ],
 
@@ -26,7 +26,7 @@
   dependencyDashboard: true,
   dependencyDashboardTitle: ":robot: Renovate Dashboard",
   platformCommit: true,
-  printConfig: false,
+  printConfig: true,
   stopUpdatingLabel: "stop-updating",
   suppressNotifications: ["prIgnoreNotification"],
   timezone: "Europe/Vienna",

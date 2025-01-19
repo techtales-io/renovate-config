@@ -3,6 +3,10 @@
   // https://docs.renovatebot.com/configuration-options/#packagerules
   packageRules: [
     {
+      matchDatasources: ["cdnjs"],
+      addLabels: ["renovate/cdnjs"],
+    },
+    {
       matchDatasources: ["docker"],
       addLabels: ["renovate/docker"],
     },
