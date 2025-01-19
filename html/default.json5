@@ -1,0 +1,5 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  // https://docs.renovatebot.com/modules/manager/html/
+  extends: ["github>techtales-io/renovate-config//html/automerge.json5"],
+}

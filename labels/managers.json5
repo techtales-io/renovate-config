@@ -39,6 +39,10 @@
       addLabels: ["renovate/homebrew"],
     },
     {
+      matchManagers: ["html"],
+      addLabels: ["renovate/html"],
+    },
+    {
       matchManagers: ["kubernetes"],
       addLabels: ["renovate/kubernetes"],
     },
