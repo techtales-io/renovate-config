@@ -24,7 +24,7 @@
   commitBodyTable: true,
   configMigration: true,
   dependencyDashboard: true,
-  dependencyDashboardTitle: ":robot: Renovate Dashboard",
+  dependencyDashboardTitle: "🤖 Renovate Dashboard",
   platformCommit: true,
   printConfig: true,
   stopUpdatingLabel: "stop-updating",
