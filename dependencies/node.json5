@@ -1,0 +1,12 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "dependencies: node",
+  packageRules: [
+    {
+      description: "stability: node",
+      matchDepNames: ["node"],
+      matchUpdateTypes: ["major", "minor", "patch"],
+      minimumReleaseAge: "3 days",
+    },
+  ],
+}
