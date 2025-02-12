@@ -1,0 +1,10 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "techtales node base config",
+  extends: [
+    "github>techtales-io/renovate-config//dependencies/node.json5",
+    "github>techtales-io/renovate-config//docker/default.json5",
+    "github>techtales-io/renovate-config//npm/default.json5",
+    "github>techtales-io/renovate-config//nvm/default.json5",
+  ],
+}
