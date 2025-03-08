@@ -26,7 +26,7 @@
   configMigration: true,
   dependencyDashboard: true,
   dependencyDashboardTitle: "🤖 Renovate Dashboard",
-  platformCommit: true,
+  platformCommit: "enabled",
   printConfig: true,
   stopUpdatingLabel: "stop-updating",
   suppressNotifications: ["prIgnoreNotification"],
