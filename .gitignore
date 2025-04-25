@@ -1,44 +1,14 @@
-# ignore everything
-*
+# Editors
+.vscode/
+.idea/
 
-# allow files and directories
-!/.github
-!/.taskfiles
-!/commit-message
-!/dependencies
-!/docker
-!/flux
-!/github-actions
-!/helm-values
-!/html
-!/kubernetes
-!/kustomize
-!/labels
-!/mise
-!/nix
-!/npm
-!/nvm
-!/poetry
-!/pre-commit
-!/regex
-!/terraform
-!.editorconfig
-!.gitignore
-!.markdownlint.yaml
-!.mise.toml
-!.pre-commit-config.yaml
-!.prettierignore
-!.prettierrc.yaml
-!.yamllint.yaml
-!base.json5
-!flux-infra.json5
-!node.json5
-!README.md
-!Taskfile.yaml
-!terraform-infra.yaml
+# OS artifacts
+.DS_Store
+Thumbs.db
 
-# ignore unnecessary files inside allowed directories
-# this should go after the allowed directories
-**/*.log
-**/.DS_Store
-**/Thumbs.db
+# vscode-sops
+.decrypted~*.yaml
+
+# Env files
+*.envrc
+*.env
