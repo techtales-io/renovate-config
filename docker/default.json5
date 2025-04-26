@@ -2,5 +2,8 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   // https://docs.renovatebot.com/modules/datasource/docker/
   // used by managers
-  extends: ["github>techtales-io/renovate-config//docker/automerge.json5"],
+  extends: [
+    "github>techtales-io/renovate-config//docker/automerge.json5",
+    "github>techtales-io/renovate-config//docker/semantic-commit.json5",
+  ],
 }

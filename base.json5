@@ -5,6 +5,7 @@
     // https://docs.renovatebot.com/presets-config/
     "config:best-practices",
     "mergeConfidence:all-badges",
+    "security:openssf-scorecard",
 
     // https://docs.renovatebot.com/presets-default/
     ":automergeRequireAllStatusChecks",
