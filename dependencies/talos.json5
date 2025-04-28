@@ -3,7 +3,7 @@
   description: "dependencies: talos",
   packageRules: [
     {
-      description: "talos: prevent automerge",
+      description: "talos: disable automerge",
       matchDepNames: [
         "ghcr.io/siderolabs/kubelet",
         "ghcr.io/siderolabs/installer",
