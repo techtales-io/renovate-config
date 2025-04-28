@@ -2,4 +2,11 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   // https://docs.renovatebot.com/modules/manager/kustomize/
   extends: ["github>techtales-io/renovate-config//kustomize/automerge.json5"],
+  packageRules: [
+    {
+      description: "kustomize: disable pinDigests",
+      matchManagers: ["kustomize"],
+      pinDigests: false,
+    },
+  ],
 }

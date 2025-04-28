@@ -18,14 +18,5 @@
       separateMinorPatch: false,
       automerge: false,
     },
-    {
-      description: "github-runners: prevent pin of oci helmcharts",
-      matchDepNames: [
-        "gha-runner-scale-set",
-        "gha-runner-scale-set-controller",
-      ],
-      matchUpdateTypes: ["pin", "pinDigest"],
-      enabled: false,
-    },
   ],
 }

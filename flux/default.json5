@@ -8,7 +8,7 @@
   ],
   packageRules: [
     {
-      description: "flux: prevent pinDigests",
+      description: "flux: disable pinDigests",
       matchManagers: ["flux"],
       pinDigests: false,
     },
