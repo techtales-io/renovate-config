@@ -1,0 +1,13 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "mise: semantic commit configuration",
+  packageRules: [
+    {
+      matchManagers: ["mise"],
+      matchUpdateTypes: ["major", "minor", "patch", "digest"],
+      semanticCommitType: "chore",
+      semanticCommitScope: "mise",
+      commitMessageTopic: "{{packageName}}",
+    },
+  ],
+}
