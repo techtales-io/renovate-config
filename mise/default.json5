@@ -1,5 +1,8 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   // https://docs.renovatebot.com/modules/manager/mise/
-  extends: ["github>techtales-io/renovate-config//mise/automerge.json5"],
+  extends: [
+    "github>techtales-io/renovate-config//mise/automerge.json5",
+    "github>techtales-io/renovate-config//mise/sematic-commit.json5",
+  ],
 }
