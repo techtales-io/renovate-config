@@ -67,8 +67,8 @@
       addLabels: ["renovate/nvm"],
     },
     {
-      matchManagers: ["poetry"],
-      addLabels: ["renovate/poetry"],
+      matchManagers: ["pep621"],
+      addLabels: ["renovate/pep621"],
     },
     {
       matchManagers: ["pre-commit"],
