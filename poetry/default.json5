@@ -1,5 +1,0 @@
-{
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  // https://docs.renovatebot.com/modules/manager/poetry/
-  extends: ["github>techtales-io/renovate-config//poetry/automerge.json5"],
-}

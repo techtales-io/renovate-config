@@ -1,0 +1,12 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "dependencies: python",
+  packageRules: [
+    {
+      description: "prevention: automerge python",
+      matchDepNames: ["python"],
+      matchUpdateTypes: ["major", "minor"],
+      automerge: false,
+    },
+  ],
+}
