@@ -38,6 +38,7 @@
       ],
       semanticCommitScope: "minecraft",
       commitMessageTopic: "plugin {{depName}}",
+      automerge: true,
     },
   ],
 }
