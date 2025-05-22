@@ -1,0 +1,32 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "Update minecraft/paper build download urls in flux kubernetes repositories",
+  customManagers: [
+    {
+      customType: "regex",
+      managerFilePatterns: ["/^kubernetes/.+\\.ya?ml$/"],
+      matchStrings: [
+        "https://api\\.papermc\\.io/v2/projects/paper/versions/(?<currentValue>[\\d.]+)/builds/(?<currentDigest>\\d+)/downloads/paper-[\\d.]+-\\d+.jar",
+      ],
+      datasourceTemplate: "custom.minecraft-paper",
+      depNameTemplate: "minecraft/paper",
+      autoReplaceStringTemplate: "https://api.papermc.io/v2/projects/paper/versions/{{{currentVersion}}}/builds/{{{newDigest}}}/downloads/paper-{{{currentVersion}}}-{{{newDigest}}}.jar",
+    },
+  ],
+  customDatasources: {
+    "minecraft-paper": {
+      defaultRegistryUrlTemplate: "https://api.papermc.io/v2/projects/paper/versions/{{currentValue}}",
+      format: "json",
+      transformTemplates: [
+        '{ "releases": [ { "version": "{{currentValue}}", "digest": $string(builds[-1]) } ], "sourceUrl": "https://github.com/PaperMC/Paper", "homepage": "https://papermc.io/software/paper" }',
+      ],
+    },
+  },
+  packageRules: [
+    {
+      matchDatasources: ["custom.minecraft-paper"],
+      commitMessageTopic: "{{depName}}",
+      semanticCommitScope: "minecraft",
+    },
+  ],
+}

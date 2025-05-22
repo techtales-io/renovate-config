@@ -1,0 +1,21 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "Update minecraft/velocity download urls in flux kubernetes repositories with custom regex manager",
+  customDatasources: {
+    "minecraft-velocity": {
+      defaultRegistryUrlTemplate: "https://api.papermc.io/v2/projects/velocity",
+      format: "json",
+      transformTemplates: [
+        '{ "releases": [ { "version": versions[-1] } ], "sourceUrl": "https://github.com/PaperMC/Velocity", "homepage": "https://papermc.io/software/velocity" }',
+      ],
+    },
+  },
+  packageRules: [
+    {
+      matchDatasources: ["custom.minecraft-velocity"],
+      commitMessageTopic: "{{depName}}",
+      semanticCommitScope: "minecraft",
+      ignoreUnstable: false,
+    },
+  ],
+}
