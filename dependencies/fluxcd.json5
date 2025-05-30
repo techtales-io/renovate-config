@@ -5,7 +5,7 @@
     {
       description: "group: fluxcd",
       groupName: "fluxcd",
-      matchManagers: ["flux", "kustomize"],
+      matchManagers: ["flux", "kustomize", "regex"],
       matchDepNames: ["fluxcd/flux2", "ghcr.io/fluxcd/flux-manifests"],
       semanticCommitScope: "{{groupName}}",
       group: {
