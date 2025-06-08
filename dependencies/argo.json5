@@ -1,0 +1,17 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "dependencies: argo",
+  packageRules: [
+    {
+      description: "group: argo",
+      groupName: "argo",
+      matchManagers: ["flux"],
+      matchDepNames: ["quay.io/argoproj/**"],
+      semanticCommitScope: "{{groupName}}",
+      group: {
+        semanticCommitScope: "{{groupName}}",
+        commitMessageTopic: "group",
+      },
+    },
+  ],
+}
