@@ -3,7 +3,7 @@
   description: "dependencies: rook-ceph",
   packageRules: [
     {
-      description: "group: rook-ceph",
+      description: "rook-ceph: group",
       groupName: "rook-ceph",
       matchManagers: ["flux"],
       matchDepNames: ["rook-ceph", "rook-ceph-cluster"],

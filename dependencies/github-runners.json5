@@ -3,7 +3,7 @@
   description: "dependencies: github-runners",
   packageRules: [
     {
-      description: "group: github-runners",
+      description: "github-runners: group",
       groupName: "github-runners",
       matchManagers: ["flux"],
       matchDepNames: [

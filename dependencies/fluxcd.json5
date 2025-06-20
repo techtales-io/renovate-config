@@ -3,7 +3,7 @@
   description: "dependencies: fluxcd",
   packageRules: [
     {
-      description: "group: fluxcd",
+      description: "fluxcd: group",
       groupName: "fluxcd",
       matchManagers: ["flux", "kustomize", "regex"],
       matchDepNames: ["fluxcd/flux2", "ghcr.io/fluxcd/flux-manifests"],

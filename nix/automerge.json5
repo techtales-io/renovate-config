@@ -1,6 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  description: "nix: automerge",
+  description: "nix: automerge non major versions",
   packageRules: [
     {
       matchManagers: ["nix"],

@@ -3,7 +3,7 @@
   description: "dependencies: tektoncd",
   packageRules: [
     {
-      description: "tektoncd: automerge",
+      description: "tektoncd: enable automerge",
       matchDatasources: ["github-releases"],
       matchDepNames: ["tektoncd/**"],
       automerge: true,

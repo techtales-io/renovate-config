@@ -3,7 +3,7 @@
   description: "dependencies: node",
   packageRules: [
     {
-      description: "stability: node",
+      description: "node: stability",
       matchDepNames: ["node"],
       matchUpdateTypes: ["major", "minor", "patch"],
       minimumReleaseAge: "3 days",
