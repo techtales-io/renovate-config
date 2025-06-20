@@ -3,7 +3,7 @@
   description: "dependencies: dragonfly",
   packageRules: [
     {
-      description: "group: dragonfly",
+      description: "dragonfly: group",
       groupName: "dragonfly",
       matchDatasources: ["docker", "github-releases"],
       matchPackageNames: ["/dragonfly(?:db)?.operator/"],

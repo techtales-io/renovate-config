@@ -3,7 +3,7 @@
   description: "dependencies: minio",
   packageRules: [
     {
-      description: "versioning: minio",
+      description: "minio: versioning",
       matchDatasources: ["docker"],
       matchDepNames: ["quay.io/minio/minio"],
       versioning: "regex:^RELEASE\\.(?<major>\\d+)-(?<minor>\\d+)-(?<patch>\\d+)T.*Z(-(?<compatibility>.*))?$",

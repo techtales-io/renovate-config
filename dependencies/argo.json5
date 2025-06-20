@@ -3,7 +3,7 @@
   description: "dependencies: argo",
   packageRules: [
     {
-      description: "group: argo",
+      description: "argo: group",
       groupName: "argo",
       matchManagers: ["flux"],
       matchDepNames: ["quay.io/argoproj/**"],

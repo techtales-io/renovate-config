@@ -3,7 +3,7 @@
   description: "dependencies: google-cloud-sdk",
   packageRules: [
     {
-      description: "google-cloud-sdk: automerge",
+      description: "google-cloud-sdk: enable automerge",
       matchDatasources: ["docker"],
       matchDepNames: ["google/cloud-sdk"],
       automerge: true,

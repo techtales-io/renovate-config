@@ -1,6 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  description: "docker: automerge datasource non major versions",
+  description: "docker: automerge non major versions",
   packageRules: [
     {
       matchDatasources: ["docker"],
