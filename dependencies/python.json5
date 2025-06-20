@@ -3,10 +3,15 @@
   description: "dependencies: python",
   packageRules: [
     {
-      description: "prevention: automerge python",
+      description: "python: disable automerge",
       matchDepNames: ["python"],
       matchUpdateTypes: ["major", "minor"],
       automerge: false,
+    },
+    {
+      description: "python: versioning",
+      matchDepNames: ["python"],
+      rangeStrategy: "bump",
     },
   ],
 }
