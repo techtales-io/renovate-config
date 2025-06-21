@@ -1,0 +1,9 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  // https://docs.renovatebot.com/modules/datasource/helm/
+  // used by managers
+  extends: [
+    "github>techtales-io/renovate-config//helm/automerge.json5",
+    "github>techtales-io/renovate-config//helm/semantic-commit.json5",
+  ],
+}

@@ -4,7 +4,6 @@
   extends: [
     "github>techtales-io/renovate-config//flux/automerge.json5",
     "github>techtales-io/renovate-config//flux/file-match.json5",
-    "github>techtales-io/renovate-config//flux/semantic-commit.json5",
   ],
   packageRules: [
     {
