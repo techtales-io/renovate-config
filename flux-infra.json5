@@ -2,11 +2,11 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   description: "techtales flux infra base config",
   extends: [
-    "github>techtales-io/renovate-config//dependencies/fluxcd.json5",
     "github>techtales-io/renovate-config//docker/default.json5",
     "github>techtales-io/renovate-config//flux/default.json5",
     "github>techtales-io/renovate-config//helm-values/default.json5",
     "github>techtales-io/renovate-config//kubernetes/default.json5",
     "github>techtales-io/renovate-config//kustomize/default.json5",
+    "github>techtales-io/renovate-config//dependencies/fluxcd.json5",
   ],
 }
