@@ -1,0 +1,13 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "kustomize: semantic commit configuration",
+  packageRules: [
+    {
+      matchManagers: ["kustomize"],
+      matchDatasources: ["helm"],
+      matchUpdateTypes: ["major", "minor", "patch", "digest"],
+      semanticCommitScope: "{{packageName}}",
+      commitMessageTopic: "helm-release",
+    },
+  ],
+}
