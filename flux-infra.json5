@@ -3,6 +3,7 @@
   description: "techtales flux infra base config",
   extends: [
     "github>techtales-io/renovate-config//docker/default.json5",
+    "github>techtales-io/renovate-config//helm/default.json5",
     "github>techtales-io/renovate-config//flux/default.json5",
     "github>techtales-io/renovate-config//helm-values/default.json5",
     "github>techtales-io/renovate-config//kubernetes/default.json5",

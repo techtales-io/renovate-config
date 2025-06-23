@@ -1,0 +1,11 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "helm: semantic commit configuration",
+  packageRules: [
+    {
+      matchDatasources: ["helm"],
+      semanticCommitScope: "{{depName}}",
+      commitMessageTopic: "helm-release",
+    },
+  ],
+}
