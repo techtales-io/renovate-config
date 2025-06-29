@@ -14,11 +14,5 @@
       },
       automerge: false,
     },
-    {
-      description: "fluxcd: ignore image updates",
-      matchDatasources: ["docker"],
-      matchDepNames: ["ghcr.io/fluxcd/**"],
-      enabled: false,
-    },
   ],
 }
