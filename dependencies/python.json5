@@ -8,11 +8,5 @@
       matchUpdateTypes: ["major", "minor"],
       automerge: false,
     },
-    {
-      description: "python: disable pin",
-      matchDepNames: ["python"],
-      matchUpdateTypes: ["pin"],
-      enabled: false,
-    },
   ],
 }
