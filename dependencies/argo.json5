@@ -5,13 +5,14 @@
     {
       description: "argo: group",
       groupName: "argo",
-      matchManagers: ["flux"],
-      matchDepNames: ["quay.io/argoproj/**"],
+      matchDatasources: ["docker"],
+      matchPackageNames: ["/argoproj/"],
       semanticCommitScope: "{{groupName}}",
       group: {
         semanticCommitScope: "{{groupName}}",
         commitMessageTopic: "group",
       },
+      minimumGroupSize: 3,
     },
   ],
 }

@@ -5,12 +5,13 @@
     {
       description: "dragonfly: group",
       groupName: "dragonfly",
-      matchDatasources: ["docker", "github-releases"],
+      matchDatasources: ["docker", "github-releases", "github-tags"],
       matchPackageNames: ["/dragonfly(?:db)?.operator/"],
       group: {
         semanticCommitScope: "{{groupName}}",
         commitMessageTopic: "group",
       },
+      minimumGroupSize: 3,
       separateMinorPatch: true,
     },
   ],

@@ -4,10 +4,8 @@
   packageRules: [
     {
       description: "talos: disable automerge",
-      matchDepNames: [
-        "ghcr.io/siderolabs/kubelet",
-        "ghcr.io/siderolabs/installer",
-      ],
+      matchDatasources: ["docker"],
+      matchPackageNames: ["/siderolabs/"],
       pinDigests: false,
       separateMinorPatch: false,
       automerge: false,

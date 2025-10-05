@@ -5,7 +5,7 @@
     {
       description: "minecraft: automerge schedule",
       matchDatasources: ["docker"],
-      matchDepNames: ["**/itzg/**"],
+      matchPackageNames: ["/itzg/"],
       automergeSchedule: ["* 2-7 * * *"], // only merge between 2am and 7am
     },
   ],
