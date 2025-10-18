@@ -5,7 +5,7 @@
     {
       description: "tektoncd: enable automerge",
       matchDatasources: ["github-releases"],
-      matchDepNames: ["tektoncd/**"],
+      matchPackageNames: ["/tektoncd/"],
       automerge: true,
     },
   ],
