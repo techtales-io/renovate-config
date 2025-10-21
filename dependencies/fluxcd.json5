@@ -3,15 +3,29 @@
   description: "dependencies: fluxcd",
   packageRules: [
     {
-      description: "fluxcd: group",
-      groupName: "fluxcd",
-      matchManagers: ["flux", "kustomize", "regex"],
-      matchDepNames: ["fluxcd/flux2", "ghcr.io/fluxcd/flux-manifests"],
+      description: "flux-operator: group",
+      groupName: "flux-operator",
+      matchDatasources: ["docker"],
+      matchPackageNames: ["/flux-operator/"],
       semanticCommitScope: "{{groupName}}",
       group: {
         semanticCommitScope: "{{groupName}}",
         commitMessageTopic: "group",
       },
+      minimumGroupSize: 2,
+      automerge: false,
+    },
+    {
+      description: "flux-instance: group",
+      groupName: "flux-instance",
+      matchDatasources: ["github-releases", "github-tags"],
+      matchPackageNames: ["/fluxcd/"],
+      semanticCommitScope: "{{groupName}}",
+      group: {
+        semanticCommitScope: "{{groupName}}",
+        commitMessageTopic: "group",
+      },
+      minimumGroupSize: 2,
       automerge: false,
     },
   ],
