@@ -7,9 +7,9 @@
       groupName: "flux-operator",
       matchDatasources: ["docker"],
       matchPackageNames: ["/flux-operator/"],
-      semanticCommitScope: "{{groupName}}",
+      semanticCommitScope: "flux-operator",
       group: {
-        semanticCommitScope: "{{groupName}}",
+        semanticCommitScope: "flux-operator",
         commitMessageTopic: "group",
       },
       minimumGroupSize: 2,
@@ -20,9 +20,9 @@
       groupName: "flux-instance",
       matchDatasources: ["github-releases", "github-tags"],
       matchPackageNames: ["/fluxcd/"],
-      semanticCommitScope: "{{groupName}}",
+      semanticCommitScope: "flux-instance",
       group: {
-        semanticCommitScope: "{{groupName}}",
+        semanticCommitScope: "flux-instance",
         commitMessageTopic: "group",
       },
       minimumGroupSize: 2,

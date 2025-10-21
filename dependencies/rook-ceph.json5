@@ -5,11 +5,11 @@
     {
       description: "rook-ceph: group",
       groupName: "rook-ceph",
-      matchManagers: ["flux"],
+      matchDatasources: ["docker"],
       matchPackageNames: ["/rook-ceph/"],
-      semanticCommitScope: "{{groupName}}",
+      semanticCommitScope: "rook-ceph",
       group: {
-        semanticCommitScope: "{{groupName}}",
+        semanticCommitScope: "rook-ceph",
         commitMessageTopic: "group",
       },
       minimumGroupSize: 2,

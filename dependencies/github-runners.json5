@@ -7,9 +7,9 @@
       groupName: "github-runners",
       matchDatasources: ["docker"],
       matchPackageNames: ["/gha-runner-scale-set/"],
-      semanticCommitScope: "{{groupName}}",
+      semanticCommitScope: "github-runners",
       group: {
-        semanticCommitScope: "{{groupName}}",
+        semanticCommitScope: "github-runners",
         commitMessageTopic: "group",
       },
       minimumGroupSize: 2,

@@ -7,8 +7,9 @@
       groupName: "dragonfly",
       matchDatasources: ["docker", "github-releases", "github-tags"],
       matchPackageNames: ["/dragonfly(?:db)?.operator/"],
+      semanticCommitScope: "dragonfly",
       group: {
-        semanticCommitScope: "{{groupName}}",
+        semanticCommitScope: "dragonfly",
         commitMessageTopic: "group",
       },
       minimumGroupSize: 3,
