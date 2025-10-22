@@ -7,9 +7,9 @@
       groupName: "argo",
       matchDatasources: ["docker"],
       matchPackageNames: ["/argoproj/"],
-      semanticCommitScope: "{{groupName}}",
+      semanticCommitScope: "argo",
       group: {
-        semanticCommitScope: "{{groupName}}",
+        semanticCommitScope: "argo",
         commitMessageTopic: "group",
       },
       minimumGroupSize: 3,
