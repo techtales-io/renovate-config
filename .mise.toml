@@ -1,7 +1,7 @@
 # https://docs.renovatebot.com/modules/manager/mise/#additional-information
 [tools]
 # https://gitleaks.io/
-gitleaks = "8.29.0"
+gitleaks = "8.29.1"
 # https://pre-commit.com/
 pre-commit = "4.4.0"
 # https://taskfile.dev/
