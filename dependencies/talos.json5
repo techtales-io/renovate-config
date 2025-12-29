@@ -4,8 +4,8 @@
   packageRules: [
     {
       description: "talos: disable automerge",
-      matchDatasources: ["docker"],
-      matchPackageNames: ["/siderolabs/"],
+      matchDatasources: ["docker", "github-tags"],
+      matchPackageNames: ["/siderolabs/", "/talosctl/", "/kubectl/"],
       pinDigests: false,
       separateMinorPatch: false,
       automerge: false,
