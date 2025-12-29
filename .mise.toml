@@ -1,8 +1,3 @@
-# https://docs.renovatebot.com/modules/manager/mise/#additional-information
 [tools]
-# https://gitleaks.io/
-gitleaks = "8.30.0"
-# https://pre-commit.com/
-pre-commit = "4.5.1"
-# https://taskfile.dev/
-task = "3.41.0"
+"aqua:pre-commit/pre-commit" = "4.5.1"
+"aqua:go-task/task" = "3.46.4"
