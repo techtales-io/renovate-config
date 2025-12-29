@@ -1,0 +1,10 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "nix: disable status checks",
+  packageRules: [
+    {
+      matchManagers: ["nix"],
+      requiredStatusChecks: null,
+    },
+  ],
+}
