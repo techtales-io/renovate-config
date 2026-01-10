@@ -5,7 +5,7 @@
     {
       description: "talos: disable automerge",
       matchDatasources: ["docker", "github-tags"],
-      matchPackageNames: ["/siderolabs/", "/talosctl/", "/kubectl/"],
+      matchPackageNames: ["/siderolabs/"],
       pinDigests: false,
       separateMinorPatch: false,
       automerge: false,
