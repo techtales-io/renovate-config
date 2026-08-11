@@ -27,6 +27,9 @@
   configMigration: true,
   dependencyDashboard: true,
   dependencyDashboardTitle: "🤖 Renovate Dashboard",
+  lockFileMaintenance: {
+    automerge: true,
+  },
   platformCommit: "enabled",
   printConfig: true,
   stopUpdatingLabel: "stop-updating",
