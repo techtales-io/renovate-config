@@ -1,0 +1,7 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  // https://docs.renovatebot.com/modules/manager/docker-compose/
+  extends: [
+    "github>techtales-io/renovate-config//docker-compose/automerge.json5",
+  ],
+}
