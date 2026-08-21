@@ -1,0 +1,10 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "docker-compose: disable status checks",
+  packageRules: [
+    {
+      matchManagers: ["docker-compose"],
+      requiredStatusChecks: null,
+    },
+  ],
+}
