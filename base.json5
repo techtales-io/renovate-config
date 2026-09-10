@@ -12,7 +12,6 @@
     ":disableRateLimiting",
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":pinAllExceptPeerDependencies",
-    ":rebaseStalePrs",
     ":renovatePrefix",
 
     "github>techtales-io/renovate-config//commit-message/default.json5",
