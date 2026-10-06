@@ -1,11 +1,11 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  description: "dependencies: minio",
+  description: "dependencies: minio / silo",
   packageRules: [
     {
-      description: "minio: versioning",
+      description: "minio/silo: versioning",
       matchDatasources: ["docker"],
-      matchDepNames: ["quay.io/minio/minio"],
+      matchDepNames: ["quay.io/minio/minio", "pgsty/silo"],
       versioning: "regex:^RELEASE\\.(?<major>\\d+)-(?<minor>\\d+)-(?<patch>\\d+)T.*Z(-(?<compatibility>.*))?$",
     },
   ],
