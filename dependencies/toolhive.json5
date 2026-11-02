@@ -1,0 +1,19 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "dependencies: toolhive",
+  packageRules: [
+    {
+      description: "toolhive: group",
+      groupName: "toolhive",
+      matchDatasources: ["docker"],
+      matchPackageNames: ["/stacklok\\/toolhive/"],
+      semanticCommitScope: "toolhive",
+      group: {
+        semanticCommitScope: "toolhive",
+        commitMessageTopic: "group",
+      },
+      minimumGroupSize: 2,
+      automerge: false,
+    },
+  ],
+}
