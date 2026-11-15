@@ -1,10 +1,10 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  description: "github-actions: disable status checks",
+  description: "github-actions: ignore tests",
   packageRules: [
     {
       matchManagers: ["github-actions"],
-      requiredStatusChecks: null,
+      ignoreTests: true,
     },
   ],
 }

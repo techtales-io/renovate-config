@@ -1,10 +1,10 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  description: "terraform: disable status checks",
+  description: "terraform: ignore tests",
   packageRules: [
     {
       matchManagers: ["terraform"],
-      requiredStatusChecks: null,
+      ignoreTests: true,
     },
   ],
 }

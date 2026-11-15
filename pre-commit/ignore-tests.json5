@@ -1,10 +1,10 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  description: "pre-commit: disable status checks",
+  description: "pre-commit: ignore tests",
   packageRules: [
     {
       matchManagers: ["pre-commit"],
-      requiredStatusChecks: null,
+      ignoreTests: true,
     },
   ],
 }
