@@ -79,7 +79,7 @@
       addLabels: ["renovate/pyenv"],
     },
     {
-      matchManagers: ["regex"],
+      matchManagers: ["custom.regex"],
       addLabels: ["renovate/regex"],
     },
     {
