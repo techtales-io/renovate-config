@@ -7,6 +7,10 @@
       matchDepNames: ["python"],
       matchUpdateTypes: ["major", "minor"],
       automerge: false,
+    },
+    {
+      description: "python: separate PR per minor version",
+      matchDepNames: ["python"],
       separateMultipleMinor: true,
     },
     {
