@@ -24,7 +24,7 @@ jobs:
     permissions:
       contents: read
     container:
-      image: ghcr.io/renovatebot/renovate@sha256:63bec0c6e61553bf30c623f4ebe7e6ae087118c050288f9d47f9a6ab0f8f9bfe
+      image: ghcr.io/renovatebot/renovate@sha256:3a3afa18062aa0514f32cd636cdd08f4b6c68cb62e699e5729511d1127ad7b05
       options: --user 1001
     steps:
       # https://github.com/marketplace/actions/harden-runner
